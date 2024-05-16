@@ -1,0 +1,14 @@
+<div class="data-loader">
+  <div>
+    <h2>Pobierz dane</h2>
+    <input type="file" (change)="onFileSelected($event)" />
+  </div>
+
+  @if (selectedFile) {
+
+  <div class="data">
+    <p>Wybrany plik: {{ selectedFile.name }}</p>
+    <p>Rozmiar pliku: {{ selectedFile.size }} bajtów</p>
+  </div>
+  }
+</div>
