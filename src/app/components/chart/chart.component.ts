@@ -15,7 +15,6 @@ export class ChartComponent implements OnInit {
 
   public ds: any[] = [];
   show = false;
-  xyPairs: any;
   data: any;
 
   getVisibleDatasets() {
