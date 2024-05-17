@@ -1,7 +1,9 @@
 .btnContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 .bn31 {
   background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
@@ -20,12 +22,12 @@
 }
 
 .bn31:hover {
-  color: #fff;
+  color: #000;
 }
 
 .bn31 .bn31span {
   align-items: center;
-  background: #0e0e10;
+  background: #fff;
   border-radius: 40px;
   display: flex;
   justify-content: center;
@@ -36,4 +38,13 @@
 
 .bn31:hover .bn31span {
   background: transparent;
+}
+input[type="checkbox"] {
+  height: 2rem;
+  aspect-ratio: 1;
+  accent-color: #d1d1d1;
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
 }

@@ -146,7 +146,7 @@ export class ChartComponent implements OnInit {
 
     for (const columnName in columnData) {
       datasets.push({
-        label: columnName,
+        label: columnName.split('[')[0].split('(')[0],
         data: columnData[columnName].values,
         times: columnData[columnName].times,
       });

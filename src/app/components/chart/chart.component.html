@@ -4,12 +4,14 @@
 </div>
 <div class="btnContainer">
   <!-- <button (click)="exportData()"></button> -->
-  Skaluj maksymalnie do 1
-  <input
-    type="checkbox"
-    [checked]="scaleToOne"
-    (change)="changeScale(scaleToOne)"
-  />
+  <div class="inputContainer">
+    Skaluj maksymalnie do 1
+    <input
+      type="checkbox"
+      [checked]="scaleToOne"
+      (change)="changeScale(scaleToOne)"
+    />
+  </div>
   <a class="bn31" (click)="exportData()"
     ><span class="bn31span">Export</span></a
   >
